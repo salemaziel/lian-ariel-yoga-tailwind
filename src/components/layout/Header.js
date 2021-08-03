@@ -1,24 +1,31 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 
 const Header = () => {
+	const [scroll, setScroll] = useState(false)
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+		  setScroll(window.scrollY > 100)
+		})
+	  }, []);
+
     return(
 	<>
 		<Menu>
 			{/* Desktop menu */}
-			<div className="flex items-center w-full h-20 md:pt-16">
+			<div className={ (scroll ? " bg-white opacity-95 shadow-md" : " bg-transparent ") + " flex items-center w-full h-auto md:pt-8 fixed z-30"}>
 				<nav className="hidden w-full md:block">
-					<ul className="relative z-10 flex items-center px-6 text-sm text-white lg:text-base">
+					<ul className="relative z-10 flex items-center px-6 mb-6 text-sm text-white lg:text-base">
 						<li className="mx-2 lg:mx-3">
 							<a
 								href="#_"
-								className="relative inline-block font-medium text-gray-200 hover:text-white"
+								className={( scroll ? "text-green-700 " : "text-gray-200 hover:text-white ") + "relative inline-block font-medium font-montserrat"}
 							>
 								<span className="block">About</span>
 								<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 									<span
-										/*x-show="hover"*/ className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
+										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/*x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"* / style={{
 											display: 'none'
 										}} */
@@ -29,12 +36,12 @@ const Header = () => {
 						<li className="mx-2 lg:mx-3">
 							<a
 								href="#_"
-								className="relative inline-block font-medium text-gray-200 hover:text-white"
+								className={( scroll ? "text-green-700 " : "text-gray-200 hover:text-white ") + "relative inline-block font-medium hover:underline font-montserrat"}
 							>
 								<span className="block">Yoga</span>
 								<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 									<span
-										/*x-show="hover"*/ className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
+										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none' 
 										}}*/
@@ -45,12 +52,12 @@ const Header = () => {
 						<li className="mx-2 lg:mx-3">
 							<a
 								href="#_"
-								className="relative inline-block font-medium text-gray-200 hover:text-white"
+								className={( scroll ? "text-green-700" : "text-gray-200 hover:text-white ") + " relative inline-block font-medium hover:underline font-montserrat"}
 							>
 								<span className="block">Gallery</span>
 								<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 									<span
-										/*x-show="hover"*/ className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
+										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
 										}}*/
@@ -63,7 +70,7 @@ const Header = () => {
 								href="#_"
 								className="w-1/4 py-4 pl-6 pr-4 md:pl-4 md:py-0"
 							>
-								<span className="text-3xl font-black leading-none text-white select-none logo">
+								<span className={( scroll ? "text-green-700" : "text-white ") + " font-dancingscript tracking-wide text-4xl font-normal leading-none select-none logo"}>
 									Lian Ariel Yoga
 									<span className="text-green-500">.</span>
 								</span>
@@ -72,12 +79,12 @@ const Header = () => {
 						<li className="mx-2 lg:mx-3">
 							<a
 								href="#_"
-								className="relative inline-block font-medium text-gray-200 hover:text-white"
+								className={( scroll ? "text-green-700" : "text-gray-200 hover:text-white ") + " relative inline-block font-medium hover:underline font-montserrat"}
 							>
 								<span className="block">Contact</span>
 								<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 									<span
-										/*x-show="hover"*/ className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
+										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
 										}}*/
@@ -88,12 +95,12 @@ const Header = () => {
 						<li className="mx-2 lg:mx-3">
 							<a
 								href="#_"
-								className="relative inline-block font-medium text-gray-200 hover:text-white"
+								className={( scroll ? "text-green-700" : "text-gray-200 hover:text-white ") + " relative inline-block font-medium hover:underline font-montserrat"}
 							>
 								<span className="block">Sign In</span>
 								<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 									<span
-										/*x-show="hover" */ className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
+										/*x-show="hover" * / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
 										}}*/
@@ -104,12 +111,12 @@ const Header = () => {
 						<li className="mx-2 lg:mx-3">
 							<a
 								href="#_"
-								className="relative inline-block font-medium text-gray-200 hover:text-white"
+								className={( scroll ? "text-green-700 " : "text-gray-200 hover:text-white ") + " relative inline-block font-medium hover:underline font-montserrat "}
 							>
 								<span className="block">Sign Up</span>
 								<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 									<span
-										/* x-show="hover" */ className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
+										/* x-show="hover" * / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/*x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
 										}}*/
@@ -121,18 +128,18 @@ const Header = () => {
 				</nav>
 				{/* End Desktop menu */}
 				{/* Mobile Nav  */}
-				<nav className="fixed top-0 z-30 flex flex-col flex-wrap items-center justify-between w-full h-auto px-6 md:hidden">
+				<nav className={ (scroll ? " bg-white shadow-md " : " bg-transparent ") + "  fixed top-0 z-30 flex flex-col flex-wrap items-center justify-between w-full h-auto px-6 md:hidden"}>
 					<div className="relative z-30 flex items-center justify-between w-full h-20">
 						<a
 							href="#_"
 							className="flex items-center flex-shrink-0 mr-6 text-white"
 						>
-							<span className="text-3xl font-black leading-none text-white select-none logo">
+							<span className={ (scroll ? " text-green-700 " : " text-white ") + "text-3xl font-black leading-none text-white select-none logo"}>
 								Lian Ariel Yoga<span className="text-green-500">.</span>
 							</span>
 						</a>
 						<div className="block lg:hidden">
-							<Menu.Button className="flex items-center justify-center w-10 h-10 text-gray-200 rounded-full hover:text-white hover:bg-white hover:bg-opacity-25 focus:outline-none">
+							<Menu.Button className={( scroll ? "text-green-700 hover:text-white hover:bg-green-700 hover:bg-opacity-25 " : "text-gray-200 hover:text-white hover:bg-white hover:bg-opacity-25 ") + "flex items-center justify-center w-10 h-10  rounded-full focus:outline-none"}>
 								<svg
 									className="w-5 h-5 fill-current"
 									viewBox="0 0 20 20"
@@ -148,7 +155,7 @@ const Header = () => {
 				{/* End Mobile Nav */}
 			</div>
 			{/* Mobile Menu */}
-            <Transition
+            {/*<Transition
             as={Fragment}
         enter="transform duration-200 transition  ease-in-out"
         enterFrom="transform opacity-0"
@@ -156,7 +163,17 @@ const Header = () => {
         leave="transform duration-200 transition ease-in-out"
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="opacity-0"
-      >
+			>*/}
+            <Transition
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+
 			<Menu.Items
 				className="absolute top-0 z-20 flex flex-col items-center justify-center w-full h-full space-y-5 text-lg transition duration-300 ease-in-out origin-center bg-green-700"
 				/*style={{ display: 'none' }}*/
@@ -165,7 +182,7 @@ const Header = () => {
 					{({ active }) => (
 						<a
 							href="#_"
-							className="block text-green-100 hover:text-white"
+							className="block text-green-100 hover:text-white hover:underline font-montserrat"
 						>
 							About
 						</a>
@@ -175,7 +192,7 @@ const Header = () => {
 					{({ active }) => (
 						<a
 							href="#_"
-							className="block text-green-100 hover:text-white"
+							className="block text-green-100 hover:text-white hover:underline font-montserrat"
 						>
 							Yoga
 						</a>
@@ -186,7 +203,7 @@ const Header = () => {
 					{({ active }) => (
 						<a
 							href="#_"
-							className="block text-green-100 hover:text-white"
+							className="block text-green-100 hover:text-white hover:underline font-montserrat"
 						>
 							Gallery
 						</a>
@@ -197,7 +214,7 @@ const Header = () => {
 					{({ active }) => (
 						<a
 							href="#_"
-							className="block text-green-100 hover:text-white"
+							className="block text-green-100 hover:text-white hover:underline font-montserrat"
 						>
 							Contact
 						</a>
@@ -207,13 +224,13 @@ const Header = () => {
                 <div className="flex flex-col justify-center mt-6">
                 <Menu.Item>
 					{({ active }) => (
-          <a href="#" className="px-12 py-4 mt-2 text-center text-white border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-green-500" >Sign In</a>
+          <a href="#" className="px-12 py-4 mt-2 text-center text-white border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-green-500 font-montserrat" >Sign In</a>
                     )}
                     </Menu.Item>
 
                     <Menu.Item>
 					{({ active }) => (
-          <a href="#" className="px-12 py-4 mt-2 text-center text-white bg-green-700 border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-transparent ">Sign Up</a>
+          <a href="#" className="px-12 py-4 mt-2 text-center text-white bg-green-700 border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-transparent font-montserrat">Sign Up</a>
           )}
           </Menu.Item>
 

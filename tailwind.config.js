@@ -4,9 +4,17 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['Montserrat', "sans-serif"],
+				raleway: ['Raleway', "sans-serif"],
+				montserrat: ['Montserrat', "sans-serif"],
+				merriweather: ['Merriweather', "serif"],
+				greatvibes: ['Great Vibes', 'cursive'],
+				dancingscript: ['Dancing Script', "cursive"],
+			  },
 			animation: {
 				'fade-in-fwd':
-					'fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s   both',
+					'fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s   both',
 				'fade-in':
 					'fade-in 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) 0s both',
 				'hero-fade-in':
