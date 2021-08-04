@@ -6,3 +6,7 @@
 
 // You can delete this file if you're not using it
 import './src/styles/global.css';
+import "@fontsource/dancing-script"
+import "@fontsource/great-vibes"
+import "@fontsource/montserrat"
+import "@fontsource/raleway"

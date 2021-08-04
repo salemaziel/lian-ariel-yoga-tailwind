@@ -2,6 +2,7 @@ import * as React from "react"
 
 import PinkPants from "../../../images/lian_yoga_posing/pink-pants.jpg"
 
+import RockSand from "../../../images/stock_relaxation_misc/zen-5533531_1920.jpg"
 
 const S3Meet = () => (
     <>
@@ -9,8 +10,8 @@ const S3Meet = () => (
   <section className="bg-white">
     <div className="flex flex-col-reverse items-center justify-center max-w-5xl px-10 pt-16 mx-auto md:flex-row md:space-x-20 lg:space-x-32 md:pt-24">
       <div className="box-content relative flex items-start justify-center flex-shrink-0 pb-16 border-2 border-b-0 border-green-500 w-80 rounded-t-3xl h-96 ">
-        <div className="absolute w-full h-full p-3 pb-0">
-          <img className="box-content relative z-10 w-full h-full bg-gray-100 rounded-xl" src={PinkPants} alt="Lian Ariel in Maui" />
+        <div className="absolute w-full h-full p-3 pt-0 pb-0">
+          <img className="box-content relative z-10 w-full h-full bg-gray-100 rounded-t-3xl" src={PinkPants} alt="Lian Ariel in Maui" />
         </div>
       </div>
       <div className="flex flex-col items-start w-full h-full max-w-xs pb-10 space-y-5 md:pb-0 md:max-w-none">

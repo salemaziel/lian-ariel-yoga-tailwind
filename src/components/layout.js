@@ -9,10 +9,10 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import "@fontsource/dancing-script"
-import "@fontsource/great-vibes"
-import "@fontsource/montserrat"
-import "@fontsource/raleway"
+//import "@fontsource/dancing-script"
+//import "@fontsource/great-vibes"
+//import "@fontsource/montserrat"
+//import "@fontsource/raleway"
 
 import Header from './layout/Header';
 import Footer from "./layout/Footer"

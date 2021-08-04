@@ -28,7 +28,7 @@ const S1Hero = () => {
       leaveTo="opacity-0"
     >
         <h1 
-        className="mx-6 mt-1 mb-8 text-xl text-5xl font-light tracking-wider text-center text-green-700 md:my-10 lg:text-6xl sm:text-center sm:mx-0 text-shadow-lg animate-scale-in-center">
+        className="mx-6 mt-1 mb-8 text-xl text-5xl font-light leading-6 tracking-wider text-center text-green-700 md:my-10 lg:text-6xl sm:text-center sm:mx-0 text-shadow-lg animate-scale-in-center l">
           Inhale. 
         <span className="font-thin tracking-wider font-dancingscript"> <em>Exhale. </em></span> 
            <br className="block lg:hidden" />
@@ -51,3 +51,4 @@ const S1Hero = () => {
   }
 
 export default S1Hero
+
