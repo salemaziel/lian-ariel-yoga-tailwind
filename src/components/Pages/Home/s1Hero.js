@@ -9,7 +9,7 @@ const S1Hero = () => {
   const [show, isShowing] = useState(true)
   return(
     <>
-    <div className="absolute inset-0 z-0 h-screen bg-center bg-no-repeat bg-cover animate-hero-fade-in" /*style={{backgroundImage: 'url(https://images.unsplash.com/photo-1533693706533-57740e69765d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80)' }}*/ style={{backgroundImage: `url('${BG}')`}}/>
+    <div className="absolute inset-0 z-0 h-screen bg-fixed bg-center bg-no-repeat bg-cover animate-hero-fade-in" /*style={{backgroundImage: 'url(https://images.unsplash.com/photo-1533693706533-57740e69765d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80)' }}*/ style={{backgroundImage: `url('${BG}')`}}/>
   {/* Section 1 */}
   <section className="relative w-full h-screen bg-center bg-no-repeat bg-cover animate-fade-in-fwd" /*style={{backgroundImage: 'url(https://images.unsplash.com/photo-1533693706533-57740e69765d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80)' }}*/>
     <div className="absolute inset-0 z-0 h-full bg-gray-900 opacity-50" />
