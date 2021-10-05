@@ -10,14 +10,16 @@ const S1Hero = () => {
   const [show, isShowing] = useState(true)
   return(
     <>
-    <div className="absolute inset-0 z-0 h-screen bg-fixed bg-center bg-no-repeat bg-cover" on style={{backgroundImage: `url('${BG}')`}}>
-    <div className="absolute inset-0 z-0 h-full transition-opacity bg-gray-900 opacity-50 fade-out-hero"/>
-    </div>
   {/* Section 1 */}
-  <section className="relative w-full h-screen bg-center bg-no-repeat bg-cover animate-fade-in-fwd " >
-  
+  <section  id="s1Photo" className="w-full h-screen bg-scroll" >
+  <div
+				className="fixed z-0 w-full h-screen min-h-screen bg-fixed bg-center bg-no-repeat bg-cover md:bg-top animate-fade-in-fwd"
+				style={{ backgroundImage: `url(${BG})` }}
+			>
+        <div className="transition-opacity bg-gray-900 opacity-50 fade-out-hero" />
+      </div>
     
-    <div className="container flex items-center justify-center h-auto py-48 mx-auto">
+    <div className="container relative z-10 flex items-center justify-center h-auto py-48 mx-auto animate-fade-in-fwd">
       <div className="z-10 flex flex-col items-center px-8 xl:px-0">
      {/*<Transition 
       show={isShowing}

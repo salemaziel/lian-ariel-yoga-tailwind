@@ -5,7 +5,7 @@ import * as React from "react"
 const S7TextSection = () => (
     <>
   {/* Section 7 */}
-  <section className="w-full px-8 pt-20 pb-16 bg-white xl:px-0">
+  <section className="relative w-full px-8 pt-20 pb-16 bg-white xl:px-0">
     <div className="flex flex-col items-start max-w-6xl mx-auto md:flex-row">
       <h3 className="w-full text-4xl font-extrabold tracking-normal text-green-800 sm:text-5xl md:text-5xl md:pr-10 lg:pr-16 xl:pr-20 md:leading-none md:-mt-2 md:w-1/2">The best websites will help you tell your story</h3>
       <div className="flex flex-col w-full mt-8 space-y-5 md:w-1/2 md:space-y-10 md:mt-0">

@@ -13,7 +13,7 @@ import PinkPants from "../../../images/lian_yoga_posing/pink-pants.jpg"
 const S4Gallery = () => (
     <>
   {/* Section 4 */}
-  <section className="bg-white"			style={{
+  <section className="relative bg-white"			style={{
 				backgroundImage: `linear-gradient(
 15deg,#fff 63%,#dcfce7 0,#dcfce7 123%)`
 			}}

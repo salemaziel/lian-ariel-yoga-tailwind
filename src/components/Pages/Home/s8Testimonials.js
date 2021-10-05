@@ -5,7 +5,7 @@ import * as React from "react"
 const S8Testimonials = () => (
     <>
   {/* Section 8 */}
-  <section className="flex items-center justify-center py-20 bg-white min-w-screen">
+  <section className="relative flex items-center justify-center py-20 bg-white min-w-screen">
     <div className="px-16 bg-white">
       <div className="container flex flex-col items-start mx-auto lg:items-center">
         <p className="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-green-700 uppercase lg:justify-center lg:items-center">Don't just take our word for it</p>
@@ -24,10 +24,10 @@ const S8Testimonials = () => (
               </div>
               <div className="flex flex-col items-start justify-center">
                 <h4 className="font-bold text-gray-800">John Doe</h4>
-                <p className="text-gray-600">CEO of Something</p>
+                <p className="text-gray-600">Guy</p>
               </div>
             </div>
-            <blockquote className="mt-8 text-lg text-gray-500">"This is a no-brainer if you want to take your business to the next level. If you are looking for the ultimate toolset, this is it!"</blockquote>
+            <blockquote className="mt-8 text-lg text-gray-500">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis."</blockquote>
           </div>
           <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
             <div className="flex items-center justify-center">
@@ -36,12 +36,10 @@ const S8Testimonials = () => (
               </div>
               <div className="flex flex-col items-start justify-center">
                 <h4 className="font-bold text-gray-800">Jane Doe</h4>
-                <p className="text-gray-600">CTO of Business</p>
+                <p className="text-gray-600">Girl</p>
               </div>
             </div>
-            <blockquote className="mt-8 text-lg text-gray-500">"Thanks for creating this service. My life is so much
-              easier.
-              Thanks for making such a great product."</blockquote>
+            <blockquote className="mt-8 text-lg text-gray-500">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis."</blockquote>
           </div>
           <div className="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
             <div className="flex items-center justify-center">
@@ -50,12 +48,10 @@ const S8Testimonials = () => (
               </div>
               <div className="flex flex-col items-start justify-center">
                 <h4 className="font-bold text-gray-800">John Smith</h4>
-                <p className="text-gray-600">Creator of Stuff</p>
+                <p className="text-gray-600">Guyf</p>
               </div>
             </div>
-            <blockquote className="mt-8 text-lg text-gray-500">"Packed with awesome content and exactly what I was
-              looking
-              for. I would highly recommend this to anyone."</blockquote>
+            <blockquote className="mt-8 text-lg text-gray-500">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis."</blockquote>
           </div>
         </div>
       </div>

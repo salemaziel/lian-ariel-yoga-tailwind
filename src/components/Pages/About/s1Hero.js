@@ -5,14 +5,16 @@ import BG from '../../../images/lian_artistic_photos/BP34W8GgZX3jpg.jpg'
 const S1Hero = (props) => {
     return(
         <>
-    <div className="absolute inset-0 z-0 h-screen bg-fixed bg-center bg-no-repeat bg-cover aboutHeroBG" style={{backgroundImage: `url('${BG}')`}}>
-    <div className="absolute inset-0 z-0 h-full transition-opacity bg-gray-900 opacity-50 fade-out-hero"/>
-    </div>
   {/* Section 1 */}
-  <section className="relative w-full h-screen bg-center bg-no-repeat bg-cover animate-fade-in-fwd " >
-  
+  <section  id="s1Photo" className="w-full h-screen bg-scroll" >
+  <div
+				className="fixed z-0 w-full h-screen min-h-screen bg-fixed bg-center bg-no-repeat bg-cover md:bg-top animate-fade-in-fwd aboutHeroBG"
+				style={{ backgroundImage: `url(${BG})` }}
+			>
+        <div className="transition-opacity bg-gray-900 opacity-50 fade-out-hero" />
+      </div>
     
-    <div className="container flex items-center justify-end h-auto py-48 ml-0 mr-auto">
+    <div className="container relative z-10 flex items-center justify-center h-auto py-48 mx-auto animate-fade-in-fwd">
       <div className="z-10 flex flex-col items-center px-10 xl:px-0">
      {/*<Transition 
       show={isShowing}

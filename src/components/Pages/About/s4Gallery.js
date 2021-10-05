@@ -13,7 +13,7 @@ import PinkPants from "../../../images/lian_yoga_posing/pink-pants.jpg"
 const S3Gallery = () => (
     <>
   {/* Section 4 */}
-  <section className="bg-white">
+  <section className="relative bg-gray-50">
     <div className="pt-16 pb-16 pl-4 pr-4 mx-auto ml-auto mr-auto bg-top bg-cover max-w-7xl md:px-24 lg:px-12 lg:py-20">
       <div className="mb-10 ml-auto mr-auto bg-top bg-cover max-w-7xl md:mx-auto sm:text-center lg:max-w-2xl md:mb-16">
         <p className="text-base text-gray-700 md:text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

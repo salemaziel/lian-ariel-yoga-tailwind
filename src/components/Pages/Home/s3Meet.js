@@ -9,7 +9,7 @@ const S3Meet = () => (
 	<>
 		{/* Section 3 */}
 		<section
-			className="bg-transparent"
+			className="relative bg-white"
 			style={{
 				backgroundImage: `linear-gradient(
 170deg,#fff 65%,#dcfce7 0,#dcfce7 123%)`

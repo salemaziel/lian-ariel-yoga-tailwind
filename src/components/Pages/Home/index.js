@@ -9,6 +9,8 @@ import S7TextSection from "./s7TextSection"
 import S8Testimonials from "./s8Testimonials"
 import S9Cta from "./s9Cta"
 
+import ThreePicYList from "../../sThreePicYList"
+
 
 
 const HomePage = () => (
@@ -17,6 +19,8 @@ const HomePage = () => (
     {/*<S2Intro />*/}
 
     <S3Meet />
+    <ThreePicYList
+    Title="Services Offered" />
     <S4Gallery />
 
   {/* <S5Design /> */}
