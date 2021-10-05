@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 
+import { Link } from "gatsby"
+
 const Header = () => {
 	const [scroll, setScroll] = useState(false);
 	useEffect(() => {
@@ -23,73 +25,69 @@ const Header = () => {
 					}
 				>
 					<nav className="hidden w-full md:block">
-						<ul className="relative z-10 flex items-center px-6 mb-6 text-sm text-white lg:text-base">
+						<ul className="relative z-10 flex items-center px-6 mx-auto mb-6 text-sm text-white lg:text-base">
 							<li className="mx-2 lg:mx-3">
-								<a
-									href="#_"
+								<Link to="/about"
 									className={
 										(scroll
 											? 'text-green-700 '
-											: 'text-gray-200 hover:text-white ') +
-										'relative inline-block font-medium font-montserrat'
+											: 'text-gray-200 text-shadow-lg hover:text-white ') +
+										'relative inline-block font-medium hover:underline font-montserrat'
 									}
 								>
 									<span className="block">About</span>
-									<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+									{/*<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 										<span
 										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/*x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"* / style={{
 											display: 'none'
-										}} */
+										}} * /
 										/>
-									</span>
-								</a>
+									</span>*/}
+								</Link>
 							</li>
 							<li className="mx-2 lg:mx-3">
-								<a
-									href="#_"
+								<Link to="/yoga"
 									className={
 										(scroll
 											? 'text-green-700 '
-											: 'text-gray-200 hover:text-white ') +
+											: 'text-gray-200 text-shadow-lg hover:text-white ') +
 										'relative inline-block font-medium hover:underline font-montserrat'
 									}
 								>
 									<span className="block">Yoga</span>
-									<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+									{/*<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 										<span
 										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none' 
-										}}*/
+										}}* /
 										/>
-									</span>
-								</a>
+									</span>*/}
+								</Link>
 							</li>
 							<li className="mx-2 lg:mx-3">
-								<a
-									href="#_"
+								<Link to="/gallery"
 									className={
 										(scroll
 											? 'text-green-700'
-											: 'text-gray-200 hover:text-white ') +
+											: 'text-gray-200 text-shadow-lg hover:text-white ') +
 										' relative inline-block font-medium hover:underline font-montserrat'
 									}
 								>
-									<span className="block">Gallery</span>
-									<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+									<span className="block">Mindfulness</span>
+									{/*<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 										<span
 										/*x-show="hover"* / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
-										}}*/
+										}}* /
 										/>
-									</span>
-								</a>
+									</span>*/}
+								</Link>
 							</li>
 							<li className="mx-auto">
-								<a
-									href="#_"
+								<Link to="/"
 									className="w-1/4 py-4 pl-6 pr-4 md:pl-4 md:py-0"
 								>
 									<span
@@ -105,15 +103,14 @@ const Header = () => {
 											.
 										</span>
 									</span>
-								</a>
+								</Link>
 							</li>
 							<li className="mx-2 lg:mx-3">
-								<a
-									href="#_"
+								<Link to="/contact"
 									className={
 										(scroll
 											? 'text-green-700'
-											: 'text-gray-200 hover:text-white ') +
+											: 'text-gray-200 text-shadow-lg hover:text-white ') +
 										' relative inline-block font-medium hover:underline font-montserrat'
 									}
 								>
@@ -126,49 +123,47 @@ const Header = () => {
 										}}*/
 										/>
 									</span>
-								</a>
+								</Link>
 							</li>
-							<li className="mx-2 lg:mx-3">
-								<a
-									href="#_"
+							{/*<li className="mx-2 lg:mx-3">
+								<Link to="/sign-in"
 									className={
 										(scroll
 											? 'text-green-700'
-											: 'text-gray-200 hover:text-white ') +
+											: 'text-gray-200 text-shadow-lg hover:text-white ') +
 										' relative inline-block font-medium hover:underline font-montserrat'
 									}
 								>
 									<span className="block">Sign In</span>
-									<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+									{/*<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 										<span
 										/*x-show="hover" * / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/* x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
-										}}*/
+										}}* /
 										/>
-									</span>
-								</a>
-							</li>
+									</span>* /}
+								</Link>
+									</li>*/}
 							<li className="mx-2 lg:mx-3">
-								<a
-									href="#_"
+								<Link to="sign-up"
 									className={
 										(scroll
 											? 'text-green-700 '
-											: 'text-gray-200 hover:text-white ') +
+											: 'text-gray-200 text-shadow-lg hover:text-white ') +
 										' relative inline-block font-medium hover:underline font-montserrat '
 									}
 								>
 									<span className="block">Sign Up</span>
-									<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+									{/*<span className="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
 										<span
 										/* x-show="hover" * / className="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-500"
 										/*x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" * / style={{
 											display: 'none'
-										}}*/
+										}}* /
 										/>
-									</span>
-								</a>
+									</span>*/}
+								</Link>
 							</li>
 						</ul>
 					</nav>
@@ -183,8 +178,7 @@ const Header = () => {
 						}
 					>
 						<div className="relative z-30 flex items-center justify-between w-full h-20">
-							<a
-								href="#_"
+						<Link to="/"
 								className="flex items-center flex-shrink-0 mr-6 text-white"
 							>
 								<span
@@ -198,7 +192,7 @@ const Header = () => {
 									Lian Ariel Yoga
 									<span className="text-green-500">.</span>
 								</span>
-							</a>
+							</Link>
 							<div className="block lg:hidden">
 								<Menu.Button
 									className={
@@ -247,67 +241,61 @@ const Header = () => {
 					>
 						<Menu.Item>
 							{({ active }) => (
-								<a
-									href="#_"
+								<Link to="/about"
 									className="block text-green-100 hover:text-white hover:underline font-montserrat"
 								>
 									About
-								</a>
+								</Link>
 							)}
 						</Menu.Item>
 						<Menu.Item>
 							{({ active }) => (
-								<a
-									href="#_"
+								<Link to="#"
 									className="block text-green-100 hover:text-white hover:underline font-montserrat"
 								>
 									Yoga
-								</a>
+								</Link>
 							)}
 						</Menu.Item>
 
 						<Menu.Item>
 							{({ active }) => (
-								<a
-									href="#_"
+								<Link to="#"
 									className="block text-green-100 hover:text-white hover:underline font-montserrat"
 								>
-									Gallery
-								</a>
+									Mindfulness
+								</Link>
 							)}
 						</Menu.Item>
 
 						<Menu.Item>
 							{({ active }) => (
-								<a
-									href="#_"
+								<Link to="/contact"
 									className="block text-green-100 hover:text-white hover:underline font-montserrat"
 								>
 									Contact
-								</a>
+								</Link>
 							)}
 						</Menu.Item>
 
 						<div className="flex flex-col justify-center mt-6">
 							<Menu.Item>
 								{({ active }) => (
-									<a
-										href="#"
-										className="px-12 py-4 mt-2 text-center text-white border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-green-500 font-montserrat"
+									<Link to="/sign-in"
+										className="px-8 py-3 mt-2 text-center text-white border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-green-500 font-montserrat"
 									>
 										Sign In
-									</a>
+									</Link>
 								)}
 							</Menu.Item>
 
 							<Menu.Item>
 								{({ active }) => (
-									<a
-										href="#"
-										className="px-12 py-4 mt-2 text-center text-white bg-green-700 border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-transparent font-montserrat"
+									<Link to="/sign-up"
+										className="px-8 py-3 mt-2 text-center text-white bg-green-700 border-2 border-green-200 rounded-full sm:mt-2 sm:px-8 sm:py-2 hover:bg-transparent font-montserrat"
 									>
 										Sign Up
-									</a>
+									</Link>
 								)}
 							</Menu.Item>
 						</div>

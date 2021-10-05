@@ -10,7 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -595,3 +594,20 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/*
+.bg-crosses{
+background-color: #e5e5f7;
+opacity: 0.1;
+background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#b77c41 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #b77c41 0.8px, #e5e5f7 0.8px) -0.4px 0;
+background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+background-size: cover;
+background-position: center center;
+color: #af4a2d;
+fill: #af4a2d;
+min-height: 75vh;
+height: 100%;
+min-width: 100vw;
+width: 100%;
+}
+*/

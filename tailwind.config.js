@@ -19,6 +19,8 @@ module.exports = {
 					'fade-in 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) 0s both',
 				'hero-fade-in':
 					'fade-in 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) 1s  both',
+				'hero-fade-out':
+					"fade-out 1.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) 1s  both",
 
 				"text-shadow-drop-bottom": "text-shadow-drop-bottom 0.6s ease   both",
 

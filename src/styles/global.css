@@ -5,17 +5,17 @@
 
 @layer utilities {
 	.text-shadow {
-		text-shadow: 0px 0px 1px rgb(0 0 0 / 20%), 0px 0px 1px rgb(1 0 5 / 10%);
+		text-shadow: 0px 0px 1px rgb(0 0 0 / 75%), 0px 0px 1px rgb(1 0 5 / 75%);
 	}
 	.text-shadow-sm {
-		text-shadow: 1px 1px 3px rgb(36 37 47 / 25%);
+		text-shadow: 1px 1px 3px rgb(36 37 47 / 75%);
 	}
 	.text-shadow-md {
-		text-shadow: 0px 1px 2px rgb(30 29 39 / 19%),
+		text-shadow: 0px 1px 2px rgb(30 29 39 / 52%),
 			1px 2px 4px rgb(54 64 147 / 18%);
 	}
 	.text-shadow-lg {
-		text-shadow: 3px 3px 6px rgb(0 0 0 / 26%), 0 0 5px rgb(15 3 86 / 22%);
+		text-shadow: 3px 3px 6px rgb(0 0 0 / 56%), 0 0 5px rgb(15 3 86 / 52%);
 	}
 	.text-shadow-xl {
 		text-shadow: 1px 1px 3px rgb(0 0 0 / 29%),
@@ -30,4 +30,30 @@
     .text-shadow-light {
 		text-shadow: 3px 3px 3px rgb(0 0 0 / 67%), 4px 4px 5px #e5e7eb;
 	}
+}
+
+@layer utilities {
+	.bg-curvylines{
+		background-image:url("../images/stock_misc_vectors/lines-brown.svg");
+		background-size: cover;
+		background-position: center center;
+		color: #af4a2d;
+		fill: #af4a2d;
+		min-height: 75vh;
+		height: 100%;
+		min-width: 100vw;
+		width: 100%;
+	}
+
+}
+@layer utilities {
+	.fade-out-hero {
+	@apply animate-hero-fade-out opacity-0
+	}
+
+}
+
+.aboutHeroBG {
+	background-position: 30% 50%;
+	width: 100%;
 }
